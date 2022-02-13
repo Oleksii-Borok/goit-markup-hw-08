@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <title>Портфолио</title>
+</head>
+<body>
+<header class="header">
+    <div class="container header-container">
+        <nav class="header-nav">
+            <a class="logo link" href="./index.html">Web<span class="logo--header">Studio</span></a>
+            <ul class="list header-list">
+                <li class="header-item">
+                    <a class="link header-link" href="./index.html">Студия</a>
+                </li>
+                <li class="header-item">
+                    <a class="link header-link current" href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="header-item">
+                    <a class="link header-link" href="./contacts.html">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <ul class="list header-contacts">
+
+            <li class="header-contacts_item">
+                <a class="link header-link" href="mailto:info@devstudio.com"><svg class="contacts-icon" width="16"
+                        height="12">
+                        <use href="./images/icons.svg#icon-envelope-hover"></use>
+                    </svg>info@devstudio.com</a>
+            </li>
+
+            <li class="header-contacts_item">
+                <a class="link header-link" href="tel:+380961111111"><svg class="contacts-icon" width="10" height="16">
+                        <use href="./images/icons.svg#icon-smartphone-hover"></use>
+                    </svg>+38 096 111 11 11</a>
+            </li>
+
+        </ul>
+    </div>
+</header>
+<main>
+    <section class="section portfolio">
+        <div class="container">
+    <h1 class="visually-hidden">Портфолио</h1>
+        <ul class="list button-list">
+
+            <li class="button-item">
+                <button class="button portfolio-button current-button" type="button">Все</button>
+            </li>
+
+            <li class="button-item">
+                <button class="button portfolio-button" type="button">Веб-сайты</button>
+            </li>
+
+            <li class="button-item">
+                <button class="button portfolio-button" type="button">Приложения</button>
+            </li>
+            <li class="button-item">
+                <button class="button portfolio-button" type="button">Дизайн</button>
+            </li>
+
+            <li class="button-item">
+                <button class="button portfolio-button" type="button">Маркетинг</button>
+            </li>
+
+        </ul>
+        <h2 class="visually-hidden">Наши работы</h2>
+        <ul class="list card-set">
+
+            <li class="item works-thumb">         
+                <a class="link works-link" href="/" target="blank" rel="noopener noreferrer">
+                <div class="works-overlay_block">
+                    <p class="works-overlay_text">
+                        Технокряк это современная площадка распространения коронавируса. Компании используют
+                        эту
+                        платформу для цифрового
+                        шпионажа и атак на защищённые сервера конкурентов.
+                    </p>                                      
+                <img class="works-image" src="./images/website-laptop.jpg" alt="Веб-сайт Технокряк" width="370" height="294">
+                </div>
+                <div class="works-space">
+                <h3  class="title works-title">Технокряк</h3>
+                <p class="works-description">Веб-сайт</p>
+                </div>
+                </a>
+            </li>
+
+            <li class="item works-thumb">
+                <a class="link works-link" href="/" target="blank" rel="noopener noreferrer">
+                <div class="works-overlay_block">
+                    <p class="works-overlay_text">
+                       Разработка данного дизайна это один из важных этапов в истории нашей компании, именно после него мы получили несколько крупных заказов.
+                    </p>
+                <img src="./images/design-basketball.jpg" alt="Дизайн Постер New Orlean vs Golden Star" width="370" height="294">
+                </div>
+                <div class="works-space">
+                <h3  class="title works-title">Постер New Orlean vs Golden Star</h3>
+                <p class="works-description">Дизайн</p>
+                </div>
+                </a>
+            </li>
+
+            <li class="item works-thumb">
+                <a class="link works-link" href="/" target="blank" rel="noopener noreferrer">
+                <div class="works-overlay_block">
+                    <p class="works-overlay_text">
+                        Ресторан Seafood до сих пор является одним из наших постоянных партнеров, которые спустя года сотрудничества стали нам друзьями.
+                    </p>
+                    <img src="./images/application-restaurant.jpg" alt="Приложение Ресторан Seafood" width="370" height="294">
+                </div>
+                    <div class="works-space">
+                <h3  class="title works-title">Ресторан Seafood</h3>
+                <p class="works-description">Приложение</p>
+                </div>
+                </a>
+            </li>
+
+            <li class="item works-thumb">
+                <a class="link works-link" href="/" target="blank" rel="noopener noreferrer">
+                <div class="works-overlay_block">
+                    <p class="works-overlay_text">
+                        Проэкт Prime открыл перед нами новые возможности и как следствие сформировал наш отдел маркетинга, который приносит нам до
+                        35% годовой прибыли.
+                    </p>
+                    <img src="./images/marketing-headphones.jpg" alt="Маркетинг Проект Prime" width="370" height="294">
+                </div>
+                    <div class="works-space">
+                <h3  class="title works-title">Проект Prime</h3>
+                <p class="works-description">Маркетинг</p>
+                </div>
+                </a>
+            </li>
+
+            <li class="item works-thumb">
+                <a class="link works-link" href="/" target="blank" rel="noopener noreferrer">
+                <div class="works-overlay_block">
+                    <p class="works-overlay_text">
+                        Проэкт Boxes стал очень важной частью становления WebStudio, как компании успешно работающей с нон-профит организаиями в условиях пандемии.
+                    </p>
+                    <img src="./images/application-boxes.jpg" alt="Приложение Проект Boxes" width="370" height="294">
+                </div>
+                    <div class="works-space">
+                <h3  class="title works-title">Проект Boxes</h3>
+                <p class="works-description">Приложение</p>
+                </div>
+                </a>
+            </li>
+
+            <li class="item works-thumb">
+                <a class="link works-link" href="/" target="blank" rel="noopener noreferrer">
+                <div class="works-overlay_block">
+                    <p class="works-overlay_text">
+                        Inspiration has no borders, именно это стало нашим слоганом после работы над данным сайтом для нашего стратегиского партнера комании Creative Content. 
+                    </p>
+                    <img src="./images/website-screen.jpg" alt="Веб-сайт Inspiration has no Borders" width="370" height="294">
+                </div>
+                    <div class="works-space">
+                <h3  class="title works-title" lang="en">Inspiration has no Borders</h3>
+                <p class="works-description">Веб-сайт</p>
+                </div>
+                </a>
+            </li>
+
+            <li class="item works-thumb">
+                <a class="link works-link" href="/" target="blank" rel="noopener noreferrer">
+                <div class="works-overlay_block">
+                    <p class="works-overlay_text">
+                        Сотрудничество с компанией Limited Edition предмет особой гордости так как разработка данного дизайна стала первым проэктом после открытия офиса WebStudio в Париже.
+                    </p>
+                    <img src="./images/design-magazine.jpg" alt="Дизайн Издание Limited Edition" width="370" height="294">
+                </div>
+                    <div class="works-space">
+                <h3  class="title works-title">Издание Limited Edition</h3>
+                <p class="works-description">Дизайн</p>
+                </div>
+                </a>
+            </li>
+
+            <li class="item works-thumb">
+                <a class="link works-link" href="/" target="blank" rel="noopener noreferrer">
+                <div class="works-overlay_block">
+                    <p class="works-overlay_text">
+                        Разработка cтратегии развития для компании LAB позволила добавить в свое портфолио успешный стартап, окупившый себя за пол года, с капитализацией 2млрд долларов на сегодняшний день.
+                    </p>
+                    <img src="./images/marketing-ad.jpg" alt="Маркетинг Проект LAB" width="370" height="294">
+                </div>
+                    <div class="works-space">
+                <h3  class="title works-title">Проект LAB</h3>
+                <p class="works-description">Маркетинг</p>
+                </div>
+                </a>
+            </li>
+
+            <li class="item works-thumb"> 
+                <a class="link works-link" href="/" target="blank" rel="noopener noreferrer">
+                <div class="works-overlay_block">
+                    <p class="works-overlay_text">
+                        Обучающая платформа Growing Business была разработана нашей командой с целью поддержки малого и среднего бизнеса в мягко говоря не самые легкие времена по всему миру для предпренимателей.
+                    </p>
+                    <img src="./images/application-laptop.jpg" alt="Приложение Growing Business" width="370" height="294">
+                </div>
+                    <div class="works-space">
+                <h3  class="title works-title" lang="en">Growing Business</h3>
+                <p class="works-description">Приложение</p>
+                </div>
+                </a>
+            </li>
+        </ul>
+        </div>
+    </section>
+
+</main>
+<footer class="footer">
+    <div class="container footer-container">
+        <div class="footer-block">
+            <a class="logo link" href="./index.html">Web<span class="logo--footer">Studio</span></a>
+            <address class="address">
+                <ul class="list footer-list">
+                    <li class="footer-item">
+                        <a class="link map
+                            footer-link" href=" https://goo.gl/maps/RUXcLLHn3c5osdES6" target="blank"
+                            rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a>
+                    </li>
+                    <li class="footer-item">
+                        <a class="link footer-link" href=" mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                    <li class="footer-item">
+                        <a class="link footer-link" href="tel:+380961111111">+38 099 111 11 11</a>
+                    </li>
+                </ul>
+            </address>
+        </div>
+        <div class="footer-block">
+            <h3 class="title footer-action_title">Присоденяйтесь</h3>
+            <ul class="list social">
+                <li class="social-item">
+                    <a href="/" class="social-link" target="blank" rel="noopener noreferrer">
+                        <svg class="social-icon" width="20" height="20">
+                            <use href="./images/icons.svg#icon-instagram-2"></use>
+                        </svg>
+                    </a>
+                </li>
+
+                <li class="social-item">
+                    <a href="/" class="social-link" target="blank" rel="noopener noreferrer">
+                        <svg class="social-icon" width="20" height="20">
+                            <use href="./images/icons.svg#icon-twitter-1"></use>
+                        </svg>
+                    </a>
+                </li>
+
+                <li class="social-item">
+                    <a href="/" class="social-link" target="blank" rel="noopener noreferrer">
+                        <svg class="social-icon" width="20" height="20">
+                            <use href="./images/icons.svg#icon-facebook-1"></use>
+                        </svg>
+                    </a>
+                </li>
+
+                <li class="social-item">
+                    <a href="/" class="social-link" target="blank" rel="noopener noreferrer">
+                        <svg class="social-icon" width="20" height="20">
+                            <use href="./images/icons.svg#icon-linkedin-1"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-block">
+            <h3 class="title footer-action_title">Подпишитесь на рассылку</h3>
+            <form class="footer-form">
+                <input class="footer-input_form" type="email" name="E-mail" placeholder="E-mail" />
+                <button class="button main-button footer-subscribe_button" type="submit">Подписаться
+                    <svg class="footer-button_icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-subscribe"></use>
+                    </svg></button>
+            </form>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

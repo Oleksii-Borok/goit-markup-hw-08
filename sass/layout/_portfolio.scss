@@ -1,0 +1,66 @@
+.portfolio {
+  --card-item: 3;
+}
+
+.works-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
+
+.works-description {
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+.button-list {
+  display: flex;
+}
+
+.works-space {
+  padding: 20px 24px 20px 24px;
+  border: 1px solid var(--border-works-item);
+}
+
+.works-link {
+  display: flex;
+  flex-direction: column;
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+  &:hover .works-overlay_text,
+  &:focus .works-overlay_text {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.works-overlay_text {
+  font-size: 18px;
+  line-height: 1.56;
+  position: absolute;
+  background-color: var(--blue-overlay);
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  color: var(--white-color);
+  text-align: left;
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+  padding-right: 24px;
+  opacity: 0;
+  transition: color var(--transition), opacity var(--transition),
+    transform var(--transition);
+  transform: translateY(100%);
+}
+
+.works-overlay_block {
+  position: relative;
+  overflow: hidden;
+}

@@ -1,0 +1,14 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.contacts {
+  text-align: center;
+}
+
+.contacts-title {
+  color: var(--main-text-color);
+}

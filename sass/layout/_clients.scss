@@ -1,0 +1,27 @@
+.clients__link {
+  padding: 16px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  color: var(--border-clients-item);
+  transition: color var(--transition);
+  &:hover,
+  &:focus {
+    color: var(--blue-color);
+  }
+}
+
+.clients__icon {
+  fill: currentColor;
+  transition: fill var(--transition);
+  &:hover,
+  &:focus {
+    fill: var(--blue-color);
+  }
+}
+
+.clients {
+  --card-item: 6;
+}

@@ -1,0 +1,27 @@
+.strength-item__title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.strength {
+  --card-item: 4;
+  padding-bottom: 0px;
+}
+
+.strength__icon-wrapper {
+  height: 120px;
+  background-color: var(--button-color);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.strength-link {
+  display: flex;
+  justify-content: center;
+}
