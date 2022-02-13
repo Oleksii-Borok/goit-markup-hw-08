@@ -44,14 +44,27 @@
   margin-bottom: 20px;
 }
 
-.footer-container {
-  display: flex;
-  align-items: baseline;
+// .footer-container {
+//   display: flex;
+//   align-items: baseline;
+// }
+
+.footer-block {
+  text-align: center;
+  &:not(:last-child) {
+    margin-bottom: 60px;
+    &:last-child {
+      // margin-left: auto;
+    }
+  }
 }
 
-.footer-block:not(:last-child) {
-  margin-right: 70px;
-  &:last-child {
-    margin-left: auto;
+.block__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  &:not(:last-child) {
+    margin-bottom: 20px;
   }
 }

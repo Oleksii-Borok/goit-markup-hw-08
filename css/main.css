@@ -594,17 +594,23 @@ img {
   margin-bottom: 20px;
 }
 
-.footer-container {
-  display: flex;
-  align-items: baseline;
+.footer-block {
+  text-align: center;
 }
 
 .footer-block:not(:last-child) {
-  margin-right: 70px;
+  margin-bottom: 60px;
 }
 
-.footer-block:not(:last-child):last-child {
-  margin-left: auto;
+.block__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.block__item:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .footer-form {
@@ -793,16 +799,27 @@ img {
 }
 
 .section {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding: 60px 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 94px 0;
+  }
 }
 
 .section-title {
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-size: 36px;
+  }
 }
 
 .card-set {
