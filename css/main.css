@@ -594,6 +594,24 @@ img {
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-container {
+    --card-item: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    --card-item: 3;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+}
+
 .footer-block {
   text-align: center;
 }
@@ -625,7 +643,7 @@ img {
   padding-bottom: 15px;
   border-radius: 4px;
   margin-right: 12px;
-  width: 358px;
+  width: 450px;
   border-color: var(--input-footer-color);
   color: var(--input-footer-color);
   transition: border-color var(--transition);
@@ -633,6 +651,12 @@ img {
 
 .footer-input_form:hover, .footer-input_form:focus {
   border-color: var(--white-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-input_form {
+    width: 358px;
+  }
 }
 
 .backdrop {
@@ -664,10 +688,16 @@ img {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 528px;
+  width: 90vw;
   min-height: 581px;
   border-radius: 4px;
   padding: 40px;
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 400px;
+  }
 }
 
 .backdrop.is-hidden .modal {

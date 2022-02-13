@@ -9,10 +9,14 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 528px;
+  width: 90vw;
   min-height: 581px;
   border-radius: 4px;
   padding: 40px;
+
+  @media screen and (min-width: 480px) {
+    width: 400px;
+  }
 }
 
 .backdrop.is-hidden {
