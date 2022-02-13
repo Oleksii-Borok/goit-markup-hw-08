@@ -81,6 +81,7 @@ ul {
 img {
   display: block;
   width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -136,11 +137,24 @@ img {
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .strength {
-  --card-item: 4;
+  --card-item: 1;
   padding-bottom: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .strength {
+    --card-item: 2;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .strength {
+    --card-item: 4;
+  }
 }
 
 .strength__icon-wrapper {
@@ -151,11 +165,6 @@ img {
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
-}
-
-.strength-link {
-  display: flex;
-  justify-content: center;
 }
 
 .about__item {
@@ -177,7 +186,19 @@ img {
 
 .team {
   background-color: var(--button-color);
-  --card-item: 4;
+  --card-item: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .team {
+    --card-item: 2;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team {
+    --card-item: 4;
+  }
 }
 
 .team__item-title,
@@ -261,7 +282,19 @@ img {
 }
 
 .clients {
-  --card-item: 6;
+  --card-item: 2;
+}
+
+@media screen and (min-width: 768px) {
+  .clients {
+    --card-item: 3;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients {
+    --card-item: 6;
+  }
 }
 
 .portfolio {
@@ -786,10 +819,27 @@ img {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -4,11 +4,18 @@
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .strength {
-  --card-item: 4;
+  --card-item: 1;
   padding-bottom: 0px;
+  @media screen and (min-width: 768px) {
+    --card-item: 2;
+  }
+  @media screen and (min-width: 1200px) {
+    --card-item: 4;
+  }
 }
 
 .strength__icon-wrapper {
@@ -21,7 +28,7 @@
   margin-bottom: 30px;
 }
 
-.strength-link {
-  display: flex;
-  justify-content: center;
-}
+// .strength-link {
+// display: flex;
+// justify-content: center;
+// }
