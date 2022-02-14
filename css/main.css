@@ -114,24 +114,24 @@ img {
   color: var(--sec-logo-color);
 }
 
-.header-link {
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  padding: 32px 0;
-  display: flex;
-  align-items: center;
-  transition: color var(--transition);
-  display: none;
-}
-
-.header-link:hover, .header-link:focus {
-  color: var(--blue-color);
+@media screen and (min-width: 480px) {
+  .header-link {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .header-link {
-    display: block;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    transition: color var(--transition);
+  }
+  .header-link:hover, .header-link:focus {
+    color: var(--blue-color);
   }
 }
 
@@ -144,28 +144,34 @@ img {
 }
 
 .header-list {
-  color: var(--sec-black);
-  display: flex;
-  align-items: center;
   display: none;
 }
 
 @media screen and (min-width: 768px) {
   .header-list {
+    color: var(--sec-black);
     display: flex;
+    align-items: center;
   }
 }
 
-@media screen and (max-width: 480px) {
-  .header-contacts {
-    display: none;
-  }
+.header-contacts {
+  display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .header-contacts {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-contacts {
+    display: flex;
+    flex-direction: row;
     margin-left: auto;
   }
 }
@@ -176,17 +182,23 @@ img {
 }
 
 .contacts-icon {
-  fill: var(--main-text-color);
-  margin-right: 10px;
-  fill: currentColor;
   display: none;
 }
 
-.contacts-icon:hover, .contacts-icon:focus {
-  fill: var(--blue-color);
+@media screen and (min-width: 768px) {
+  .contacts-icon {
+    display: block;
+    fill: var(--main-text-color);
+    margin-right: 10px;
+    fill: currentColor;
+  }
+  .contacts-icon:hover, .contacts-icon:focus {
+    fill: var(--blue-color);
+  }
 }
 
 .current {
+  display: none;
   position: relative;
 }
 
@@ -202,12 +214,6 @@ img {
   position: absolute;
   background-color: var(--blue-color);
   bottom: -1px;
-}
-
-@media screen and (max-width: 480px) {
-  .current {
-    display: none;
-  }
 }
 
 .main-button {
@@ -682,17 +688,17 @@ img {
   transition: transform var(--transition);
 }
 
+@media screen and (min-width: 768px) {
+  .mob-menu {
+    display: none;
+  }
+}
+
 .mob-menu .container {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-@media screen and (min-width: 768px) {
-  .mob-menu {
-    display: none;
-  }
 }
 
 .mob-list__item:not(:last-child) {

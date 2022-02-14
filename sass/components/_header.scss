@@ -27,20 +27,21 @@
 }
 
 .header-link {
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  padding: 32px 0;
-  display: flex;
-  align-items: center;
-  transition: color var(--transition);
-  &:hover,
-  &:focus {
-    color: var(--blue-color);
+  @include tel {
+    display: none;
   }
-  display: none;
   @include tab {
-    display: block;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    transition: color var(--transition);
+    &:hover,
+    &:focus {
+      color: var(--blue-color);
+    }
   }
 }
 
@@ -53,25 +54,28 @@
 }
 
 .header-list {
-  color: var(--sec-black);
-  display: flex;
-  align-items: center;
   display: none;
+
   @include tab {
+    color: var(--sec-black);
     display: flex;
+    align-items: center;
   }
 }
 
 .header-contacts {
-  @media screen and (max-width: 480px) {
-    display: none;
-  }
-  @media screen and (max-width: 768px) {
+  display: none;
+
+  @include tab {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     margin-left: auto;
   }
-  @media screen and (min-width: 768px) {
+  @include desk {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
   }
 }
 
@@ -81,17 +85,23 @@
 }
 
 .contacts-icon {
-  fill: var(--main-text-color);
-  margin-right: 10px;
-  fill: currentColor;
-  &:hover,
-  &:focus {
-    fill: var(--blue-color);
-  }
   display: none;
+
+  @include tab {
+    display: block;
+    fill: var(--main-text-color);
+    margin-right: 10px;
+    fill: currentColor;
+    &:hover,
+    &:focus {
+      fill: var(--blue-color);
+    }
+  }
 }
 
 .current {
+  display: none;
+
   position: relative;
   &:hover,
   &:focus {
@@ -105,9 +115,5 @@
     position: absolute;
     background-color: var(--blue-color);
     bottom: -1px;
-  }
-
-  @media screen and (max-width: 480px) {
-    display: none;
   }
 }
