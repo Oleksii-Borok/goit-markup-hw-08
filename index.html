@@ -16,7 +16,7 @@
     <title>Студия</title>
 </head>
 <body class="body">
-    <!-- <header class="header">
+    <header class="header">
         <div class="container header-container">
         <nav class="header-nav">
             <a class="logo link" href="./index.html">Web<span class="logo--header">Studio</span></a>
@@ -48,7 +48,47 @@
         
         </ul>
         </div>
-    </header> -->
+        <button type="button" class="menu-open-button" data-menu-open>0</button>
+        <div class="mob-menu is-hidden" data-menu>
+            <div class="container">
+            <button type="button" class="menu-close-button" data-menu-close>X</button>
+            <ul class="list mob-list">
+                <li class="mob-list__item">
+                    <a class="link mob-list__link" href="./index.html">Студия</a>
+                </li>
+                <li class="mob-list__item">
+                    <a class="link mob-list__link" href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="mob-list__item">
+                    <a class="link mob-list__link" href="./contacts.html">Контакты</a>
+                </li>
+            </ul>
+            <ul class="list">
+                <li class="">
+                    <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+            
+                <li class="">
+                    <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+            </ul>
+            <ul class="list">
+                <li class="">
+                    <a class="link" href="">Instagram</a>
+                </li>
+                <li class="">
+                    <a class="link" href="">Twitter</a>
+                </li>
+                <li class="">
+                    <a class="link" href="">Facebook</a>
+                </li>
+                <li class="">
+                    <a class="link" href="">LinkedIn</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </header> 
     <main>
         <section class="hero overlay">
             <div class="container">
@@ -105,7 +145,7 @@
             </ul>
             </div>
         </section>
-        <!-- <section  class="section about">
+        <section  class="section about">
             <div class="container">
             <h2 class="title section-title">Чем мы занимаемся</h2>
             <ul class="list card-set about__list">
@@ -123,7 +163,7 @@
                 </li>
             </ul>
             </div>
-        </section> -->
+        </section>  
         <section class="team section">
             <div class="container">
             <h2 class="title section-title">Наша команда</h2>
@@ -491,5 +531,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>   
 </html>

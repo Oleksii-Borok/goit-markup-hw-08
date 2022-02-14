@@ -1,0 +1,36 @@
+.mob-menu {
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  padding: 48px 40px;
+  transform: translate(0);
+  transition: transform var(--transition);
+}
+
+.menu-close-button {
+  position: absolute;
+  display: block;
+  right: 0;
+  top: 0;
+}
+
+.mob-list__item {
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+.mob-list__link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+}
+
+.mob-menu.is-hidden {
+  transform: translate(100%);
+}

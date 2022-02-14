@@ -1,6 +1,7 @@
 .footer-form {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .footer-input_form {
@@ -9,14 +10,22 @@
   padding-top: 15px;
   padding-bottom: 15px;
   border-radius: 4px;
-  margin-right: 12px;
-  width: 450px;
+  // margin-right: 12px;
+
   border-color: var(--input-footer-color);
   color: var(--input-footer-color);
   transition: border-color var(--transition);
   &:hover,
   &:focus {
     border-color: var(--white-color);
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
   }
   @media screen and (min-width: 1200px) {
     width: 358px;

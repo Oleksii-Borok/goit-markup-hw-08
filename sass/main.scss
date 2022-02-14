@@ -1,15 +1,8 @@
 @import './utils/variables';
+@import './utils/mixins';
 
 @import './base/common';
 @import './base/reset';
-
-@import './layout/hero';
-@import './layout/contacts';
-@import './layout/strength';
-@import './layout/about';
-@import './layout/team';
-@import './layout/clients';
-@import './layout/portfolio';
 
 @import './components/header';
 @import './components/buttons';
@@ -20,3 +13,12 @@
 @import './components/section';
 @import './components/card-set';
 @import './components/container';
+@import './components/mob-menu';
+
+@import './layout/hero';
+@import './layout/contacts';
+@import './layout/strength';
+@import './layout/about';
+@import './layout/team';
+@import './layout/clients';
+@import './layout/portfolio';

@@ -3,6 +3,7 @@
   align-items: center;
   .logo {
     margin-right: 70px;
+    padding: 12px 0;
   }
 }
 
@@ -36,6 +37,7 @@
   &:focus {
     color: var(--blue-color);
   }
+  display: none;
 }
 
 .header-item:not(:last-child) {
@@ -50,11 +52,17 @@
   color: var(--sec-black);
   display: flex;
   align-items: center;
+  display: none;
 }
 
 .header-contacts {
-  display: flex;
-  margin-left: auto;
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: auto;
+  }
+  display: none;
 }
 
 .header-nav {
@@ -70,6 +78,7 @@
   &:focus {
     fill: var(--blue-color);
   }
+  display: none;
 }
 
 .current {
@@ -87,4 +96,5 @@
     background-color: var(--blue-color);
     bottom: -1px;
   }
+  display: none;
 }
