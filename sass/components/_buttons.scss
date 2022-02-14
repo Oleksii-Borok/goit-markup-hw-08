@@ -93,4 +93,14 @@
 
 .menu-open-button {
   margin-left: auto;
+  @include tel {
+    display: none;
+  }
+}
+
+.menu-close-button {
+  position: absolute;
+  display: block;
+  right: 0;
+  top: 0;
 }
