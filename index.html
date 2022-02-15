@@ -48,10 +48,16 @@
         
         </ul>
         </div>
-        <button type="button" class="menu-open-button" data-menu-open>MENU</button>
+        <button type="button" data-menu-open class="menu-open-button" aria-expanded="false">
+            <svg width="40" height="40">
+                <use href="images/icons.svg#burger-menu"></use>
+            </svg>
+        </button>
         <div class="mob-menu is-hidden" data-menu>
             <div class="mob-menu__container">
-            <button type="button" class="menu-close-button" data-menu-close>X</button>
+            <button type="button" class="menu-close-button" data-menu-close><svg width="40" height="40" class="menu__close-button">
+                <use href="images/icons.svg#icon-close-black"></use>
+            </svg></button>
             <ul class="list mob-list">
                 <li class="mob-list__item">
                     <a class="link mob-list__link" href="./index.html">Студия</a>
