@@ -38,11 +38,7 @@
 .button-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
-  --card-item: 3;
-   @media screen and (min-width: 768px) {
-  --card-item: 5;
-  justify-content: center;
+  flex-wrap: wrap;
   margin-bottom: 50px;
 }
 
