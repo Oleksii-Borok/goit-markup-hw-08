@@ -23,7 +23,9 @@
 }
 
 .clients {
-  --card-item: 2;
+  @media screen and (max-width: 768px) {
+    --card-item: 2;
+  }
   @media screen and (min-width: 768px) {
     --card-item: 3;
   }
