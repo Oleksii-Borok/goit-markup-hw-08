@@ -88,11 +88,20 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--white-color);
   display: flex;
+  justify-content: center;
   align-items: center;
   margin-left: auto;
   position: absolute;
   top: 8px;
   right: 8px;
+  transition: fill var(--transition);
+  // &:hover,
+  // &:focus {
+  //   fill: var(--blue-color);
+  // }
+}
+
+.mob-menu__icon {
   transition: fill var(--transition);
   &:hover,
   &:focus {

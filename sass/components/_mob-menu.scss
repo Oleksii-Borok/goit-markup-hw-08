@@ -8,7 +8,7 @@
   z-index: 1;
   padding: 48px 40px;
   transform: translate(0);
-  transition: transform var(--transition);
+  transition: var(--transition);
   @include tab {
     display: none;
   }
@@ -25,10 +25,6 @@
   &:not(:last-child) {
     margin-bottom: 32px;
   }
-  &:hover,
-  &:focus {
-    color: #2196f3;
-  }
 }
 
 .mob-list__link {
@@ -38,6 +34,10 @@
   letter-spacing: 0.02em;
   margin-bottom: 306px;
   color: #212121;
+  &:hover,
+  &:focus {
+    color: #2196f3;
+  }
 }
 
 .mob-menu.is-hidden {
