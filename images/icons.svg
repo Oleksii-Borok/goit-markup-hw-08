@@ -82,5 +82,10 @@
 </symbol>
  <symbol fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" id="burger-menu">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M8 14.6667V12H32V14.6667H8ZM8 21.3333H32V18.6667H8V21.3333ZM8 28H32V25.3333H8V28Z"></path></symbol>
+<symbol id="icon-wv1" viewBox="0 0 32 32">
+<path fill="#fff" style="fill: var(--color1, #fff)" d="M0 0h32v32h-32v-32z"></path>
+<path fill="#2196f3" style="fill: var(--color2, #2196f3)" d="M0 0h32v32h-32v-32z"></path>
+<path fill="#fff" style="fill: var(--color1, #fff)" d="M11.205 7.405h2.52l2.112 5.784 2.136-5.784h2.52l-2.928 7.584 2.544 6.264 5.304-13.92h2.952l-6.984 17.040h-2.328l-3.192-7.632-3.216 7.632h-2.352l-6.96-17.040h2.928l5.328 13.92 2.544-6.264-2.928-7.584z"></path>
+</symbol>
 </defs>
 </svg>
