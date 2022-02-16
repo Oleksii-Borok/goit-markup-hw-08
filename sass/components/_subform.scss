@@ -1,7 +1,16 @@
 .footer-form {
+  width: 100%;
+  max-width: 450px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+
+  @media screen and (max-width: 1199px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
 }
 
 .footer-input_form {
@@ -10,7 +19,16 @@
   padding-top: 15px;
   padding-bottom: 15px;
   border-radius: 4px;
-  // margin-right: 12px;
+  width: 100%;
+  max-width: 450px;
+  @media screen and (max-width: 1199px) {
+    flex-direction: column;
+    margin-bottom: 12px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    margin-right: 12px;
+  }
 
   border-color: var(--input-footer-color);
   color: var(--input-footer-color);

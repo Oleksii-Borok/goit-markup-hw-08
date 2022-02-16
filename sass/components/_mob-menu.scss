@@ -47,32 +47,39 @@
 .mob-menu__social {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-top: -10px;
 }
 
 .mob-menu__contacts {
   display: flex;
   flex-direction: column;
+  margin-bottom: 64px;
 }
 
 .mob-menu__email {
+  font-weight: 500;
+  margin-bottom: 32px;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #757575;
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  @media screen and (max-width: 479px) {
+    font-size: 26px;
+  }
+}
+
+.mob-menu__phone {
   font-weight: 500;
   font-size: 34px;
   line-height: 1.18;
   letter-spacing: 0.02em;
   margin-bottom: 32px;
   color: #2196f3;
-}
-
-.mob-menu__phone {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
-  margin-bottom: 64px;
-  color: #757575;
-  @media screen and (max-width: 479px) {
-    font-size: 26px;
-  }
 }
 
 .mob-menu__social-item {

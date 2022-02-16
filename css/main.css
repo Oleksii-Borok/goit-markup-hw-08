@@ -298,13 +298,21 @@ img {
 
 .button-list {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
   margin-bottom: 50px;
+  margin-left: -8px;
+  margin-top: -15px;
 }
 
-.button-item:not(:last-child) {
-  margin-right: 8px;
+@media screen and (min-width: 768px) {
+  .button-list {
+    justify-content: center;
+  }
+}
+
+.button-item {
+  margin-left: 8px;
+  margin-top: 15px;
 }
 
 .portfolio-button {
@@ -316,12 +324,6 @@ img {
   border: none;
   border-radius: 4px;
   transition: color var(--transition), background-color var(--transition), box-shadow var(--transition);
-}
-
-@media screen and (max-width: 768px) {
-  .portfolio-button {
-    margin-bottom: 50px;
-  }
 }
 
 .portfolio-button:hover, .portfolio-button:focus {
@@ -484,9 +486,23 @@ img {
 }
 
 .footer-form {
+  width: 100%;
+  max-width: 450px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-form {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    flex-direction: row;
+  }
 }
 
 .footer-input_form {
@@ -495,9 +511,25 @@ img {
   padding-top: 15px;
   padding-bottom: 15px;
   border-radius: 4px;
+  width: 100%;
+  max-width: 450px;
   border-color: var(--input-footer-color);
   color: var(--input-footer-color);
   transition: border-color var(--transition);
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-input_form {
+    flex-direction: column;
+    margin-bottom: 12px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-input_form {
+    flex-direction: row;
+    margin-right: 12px;
+  }
 }
 
 .footer-input_form:hover, .footer-input_form:focus {
@@ -551,7 +583,8 @@ img {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 90vw;
+  width: 100%;
+  max-width: 450px;
   min-height: 581px;
   border-radius: 4px;
   padding: 40px;
@@ -804,35 +837,43 @@ img {
 .mob-menu__social {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-top: -10px;
 }
 
 .mob-menu__contacts {
   display: flex;
   flex-direction: column;
+  margin-bottom: 64px;
 }
 
 .mob-menu__email {
+  font-weight: 500;
+  margin-bottom: 32px;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.mob-menu__email:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+@media screen and (max-width: 479px) {
+  .mob-menu__email {
+    font-size: 26px;
+  }
+}
+
+.mob-menu__phone {
   font-weight: 500;
   font-size: 34px;
   line-height: 1.18;
   letter-spacing: 0.02em;
   margin-bottom: 32px;
   color: #2196f3;
-}
-
-.mob-menu__phone {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
-  margin-bottom: 64px;
-  color: #757575;
-}
-
-@media screen and (max-width: 479px) {
-  .mob-menu__phone {
-    font-size: 26px;
-  }
 }
 
 .mob-menu__social-item {
@@ -855,7 +896,7 @@ img {
 
 .hero {
   background-color: var(--footer-background);
-  padding-top: 116px;
+  padding-top: 118px;
   padding-bottom: 118px;
   text-align: center;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-background-mobile-1x.jpg);
@@ -915,7 +956,7 @@ img {
   font-size: 26px;
   line-height: 1.62;
   letter-spacing: 0.06em;
-  max-width: 696px;
+  max-width: 360px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
@@ -926,6 +967,12 @@ img {
   .hero__title {
     font-size: 44px;
     line-height: 1.36;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    max-width: 696px;
   }
 }
 
@@ -1169,6 +1216,7 @@ img {
 }
 
 .works-space {
+  flex-grow: 1;
   padding: 20px 24px 20px 24px;
   border: 1px solid var(--border-works-item);
 }
@@ -1176,6 +1224,8 @@ img {
 .works-link {
   display: flex;
   flex-direction: column;
+  height: 100%;
+  transition: var(--transition);
 }
 
 .works-link:hover, .works-link:focus {
@@ -1209,6 +1259,11 @@ img {
 }
 
 .works-overlay_block {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio__img {
   position: relative;
   overflow: hidden;
 }
